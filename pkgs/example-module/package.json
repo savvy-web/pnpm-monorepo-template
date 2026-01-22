@@ -1,0 +1,59 @@
+{
+	"name": "@savvy-web/example-module",
+	"version": "0.0.0",
+	"description": "Example ECMA module package",
+	"type": "module",
+	"exports": {
+		".": "./src/index.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/savvy-web/pnpm-monorepo-template.git",
+		"directory": "pkgs/example-module"
+	},
+	"publishConfig": {
+		"dist": "dist/dev",
+		"linkDirectory": true,
+		"access": "public",
+		"targets": [
+			{
+				"protocol": "npm",
+				"registry": "https://npm.pkg.github.com/",
+				"directory": "dist/npm",
+				"access": "public",
+				"provenance": true
+			},
+			{
+				"protocol": "npm",
+				"registry": "https://registry.npmjs.org/",
+				"directory": "dist/npm",
+				"access": "public",
+				"provenance": true
+			}
+		]
+	},
+	"scripts": {
+		"build:dev": "rslib build --config-loader native --env-mode dev",
+		"build:prod": "rslib build --config-loader native --env-mode npm",
+		"types:check": "tsgo --noEmit"
+	},
+	"keywords": [],
+	"author": {
+		"name": "C. Spencer Beggs",
+		"email": "spencer@beggs.codes",
+		"url": "https://spencerbeg.gs"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@microsoft/api-extractor": "^7.55.2",
+		"@rslib/core": "^0.19.3",
+		"@savvy-web/rslib-builder": "^0.2.2",
+		"@types/node": "^25.0.10",
+		"@types/ws": "^8.18.1",
+		"@typescript/native-preview": "7.0.0-dev.20260122.3",
+		"vitest": "^4.0.18"
+	},
+	"engines": {
+		"node": ">=20.0.0"
+	}
+}
