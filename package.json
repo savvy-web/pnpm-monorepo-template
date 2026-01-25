@@ -8,11 +8,11 @@
 		"type": "git",
 		"url": "https://github.com/savvy-web/pnpm-monorepo-template.git"
 	},
-	"license": "UNLICENSED",
+	"license": "MIT",
 	"author": {
 		"name": "C. Spencer Beggs",
-		"email": "spencer@beggs.codes",
-		"url": "https://spencerbeg.gs"
+		"email": "spencer@savvyweb.systems",
+		"url": "https://savvyweb.systems"
 	},
 	"type": "module",
 	"scripts": {
@@ -28,6 +28,7 @@
 		"lint:fix:unsafe": "biome check --write --unsafe --max-diagnostics=none",
 		"lint:md": "markdownlint-cli2 '**/*.{md,mdx}' --config './lib/configs/.markdownlint-cli2.jsonc'",
 		"lint:md:fix": "markdownlint-cli2  --config './lib/configs/.markdownlint-cli2.jsonc' --fix",
+		"lint:tsdoc": "eslint --config ./lib/configs/eslint.config.ts --ignore-pattern '**/*.test.ts'",
 		"prepare": "husky",
 		"test": "turbo run //#vitest:all --log-prefix=none --log-order=grouped",
 		"test:coverage": "vitest run --coverage",
@@ -40,19 +41,17 @@
 		"@changesets/cli": "^2.29.8",
 		"@commitlint/cli": "^20.3.1",
 		"@commitlint/config-conventional": "^20.3.1",
+		"@savvy-web/lint-staged": "^0.1.0",
 		"@types/node": "^25.0.10",
-		"@typescript/native-preview": "7.0.0-dev.20260122.3",
+		"@typescript/native-preview": "7.0.0-dev.20260124.1",
 		"@vitest/coverage-v8": "^4.0.18",
 		"husky": "^9.1.7",
 		"lint-staged": "^16.2.7",
 		"markdownlint-cli2": "^0.20.0",
 		"markdownlint-cli2-formatter-codequality": "^0.0.7",
-		"sort-package-json": "^3.6.0",
-		"turbo": "^2.7.5",
+		"turbo": "^2.7.6",
 		"typescript": "^5.9.3",
-		"vitest": "^4.0.18",
-		"yaml": "^2.8.2",
-		"yaml-lint": "^1.7.0"
+		"vitest": "^4.0.18"
 	},
 	"packageManager": "pnpm@10.28.1",
 	"devEngines": {

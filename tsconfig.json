@@ -16,6 +16,9 @@
 	"references": [
 		{
 			"path": "./pkgs/example-module"
+		},
+		{
+			"path": "./pkgs/example-module-2"
 		}
 	]
 }
