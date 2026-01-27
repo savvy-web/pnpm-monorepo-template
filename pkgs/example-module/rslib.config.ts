@@ -4,7 +4,7 @@ import { NodeLibraryBuilder } from "@savvy-web/rslib-builder";
 const config: (env: ConfigParams) => Promise<RslibConfig> = NodeLibraryBuilder.create({
 	tsdocLint: true,
 	externals: [],
-	async transform({ pkg }) {
+	transform({ pkg }) {
 		delete pkg.devDependencies;
 		delete pkg.scripts;
 		delete pkg.publishConfig;
