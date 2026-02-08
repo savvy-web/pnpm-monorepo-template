@@ -1,9 +1,6 @@
-import type { ConfigParams, RslibConfig } from "@rslib/core";
 import { NodeLibraryBuilder } from "@savvy-web/rslib-builder";
 
-const config: (env: ConfigParams) => Promise<RslibConfig> = NodeLibraryBuilder.create({
-	tsdocLint: true,
-	externals: [],
+export default NodeLibraryBuilder.create({
 	transform({ pkg }) {
 		delete pkg.devDependencies;
 		delete pkg.scripts;
@@ -11,5 +8,3 @@ const config: (env: ConfigParams) => Promise<RslibConfig> = NodeLibraryBuilder.c
 		return pkg;
 	},
 });
-
-export default config;

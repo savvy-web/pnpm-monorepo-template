@@ -25,12 +25,12 @@
 		"types:check": "tsgo --noEmit"
 	},
 	"devDependencies": {
-		"@microsoft/api-extractor": "^7.56.0",
-		"@rslib/core": "^0.19.4",
-		"@savvy-web/rslib-builder": "^0.7.0",
-		"@types/node": "^25.2.0",
-		"@typescript/native-preview": "7.0.0-dev.20260202.1",
-		"vitest": "^4.0.18"
+		"@microsoft/api-extractor": "catalog:silk",
+		"@rslib/core": "catalog:silk",
+		"@savvy-web/rslib-builder": "^0.12.1",
+		"@types/node": "catalog:silk",
+		"@typescript/native-preview": "catalog:silk",
+		"vitest": "catalog:silk"
 	},
 	"engines": {
 		"node": ">=20.0.0"
