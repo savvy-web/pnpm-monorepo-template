@@ -7,15 +7,16 @@
 			"dependsOn": ["types:check"],
 			"inputs": [
 				"$TURBO_DEFAULT$",
+				"!**/*.test.ts",
+				"!**/*.spec.ts",
+				"!vitest.setup.ts",
+				"!tsdoc.json",
+				"!biome.jsonc",
+				"!**/*.md",
+				"!LICENSE",
 				"$TURBO_ROOT$/package.json",
 				"$TURBO_ROOT$/pnpm-lock.yaml",
-				"$TURBO_ROOT$/pnpm-workspace.yaml",
-				"package.json",
-				"rslib.config.ts",
-				"tsconfig.json",
-				"src/**/*.ts",
-				"README.md",
-				"LICENSE"
+				"$TURBO_ROOT$/pnpm-workspace.yaml"
 			],
 			"outputLogs": "full",
 			"outputs": ["dist/dev/**", ".rslib/declarations/dev/**"]
@@ -25,15 +26,16 @@
 			"dependsOn": ["types:check"],
 			"inputs": [
 				"$TURBO_DEFAULT$",
+				"!**/*.test.ts",
+				"!**/*.spec.ts",
+				"!vitest.setup.ts",
+				"!tsdoc.json",
+				"!biome.jsonc",
+				"!**/*.md",
+				"!LICENSE",
 				"$TURBO_ROOT$/package.json",
 				"$TURBO_ROOT$/pnpm-lock.yaml",
-				"$TURBO_ROOT$/pnpm-workspace.yaml",
-				"package.json",
-				"rslib.config.ts",
-				"tsconfig.json",
-				"src/**/*.ts",
-				"README.md",
-				"LICENSE"
+				"$TURBO_ROOT$/pnpm-workspace.yaml"
 			],
 			"outputLogs": "full",
 			"outputs": ["dist/npm/**", ".rslib/declarations/npm/**"]
@@ -43,13 +45,16 @@
 			"dependsOn": ["^build:dev"],
 			"inputs": [
 				"$TURBO_DEFAULT$",
+				"!**/*.test.ts",
+				"!**/*.spec.ts",
+				"!vitest.setup.ts",
+				"!tsdoc.json",
+				"!biome.jsonc",
+				"!**/*.md",
+				"!LICENSE",
 				"$TURBO_ROOT$/package.json",
 				"$TURBO_ROOT$/pnpm-lock.yaml",
-				"$TURBO_ROOT$/pnpm-workspace.yaml",
-				"package.json",
-				"rslib.config.ts",
-				"tsconfig.json",
-				"src/**/*.ts"
+				"$TURBO_ROOT$/pnpm-workspace.yaml"
 			],
 			"outputLogs": "errors-only",
 			"outputs": ["dist/.tsbuildinfo.lib"]
