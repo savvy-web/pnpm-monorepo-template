@@ -5,15 +5,14 @@
 		"//#types:check": {
 			"cache": true,
 			"dependsOn": [],
-			"inputs": ["*.ts", "lib/**/*.ts", "lib/**/*.mts"],
+			"inputs": ["*.ts", "lib/**/*.ts", "lib/**/*.mts", "tsconfig.json", "package.json"],
 			"outputLogs": "errors-only",
 			"outputs": []
 		},
 		"//#vitest:all": {
 			"cache": false,
 			"dependsOn": ["types:check"],
-			"outputLogs": "full",
-			"outputs": [".coverage/**"]
+			"outputLogs": "full"
 		}
 	}
 }
