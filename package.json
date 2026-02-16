@@ -39,7 +39,7 @@
 	"devDependencies": {
 		"@savvy-web/changesets": "^0.1.1",
 		"@savvy-web/commitlint": "^0.3.3",
-		"@savvy-web/lint-staged": "^0.4.2",
+		"@savvy-web/lint-staged": "^0.4.3",
 		"@types/node": "catalog:silk",
 		"@typescript/native-preview": "catalog:silk",
 		"@vitest/coverage-v8": "catalog:silk",
