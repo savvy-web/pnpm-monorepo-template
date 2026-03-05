@@ -7,8 +7,8 @@ settings:
 catalogs:
   default:
     '@savvy-web/changesets':
-      specifier: ^0.1.2
-      version: 0.1.2
+      specifier: ^0.3.0
+      version: 0.3.0
     '@savvy-web/commitlint':
       specifier: ^0.3.4
       version: 0.3.4
@@ -37,7 +37,7 @@ importers:
     devDependencies:
       '@savvy-web/changesets':
         specifier: 'catalog:'
-        version: 0.1.2(90f96bfd30791aac0637213b9912286a)
+        version: 0.3.0(90f96bfd30791aac0637213b9912286a)
       '@savvy-web/commitlint':
         specifier: 'catalog:'
         version: 0.3.4(28e9ec833c41eed3c9378324993f21aa)
@@ -1202,8 +1202,8 @@ packages:
   '@rushstack/ts-command-line@5.2.0':
     resolution: {integrity: sha512-lYxCX0nDdkDtCkVpvF0m25ymf66SaMWuppbD6b7MdkIzvGXKBXNIVZlwBH/C0YfkanrupnICWf2n4z3AKSfaHw==}
 
-  '@savvy-web/changesets@0.1.2':
-    resolution: {integrity: sha512-Jy/l/4Eff8vkLuRzn00wtjF5o2hSw72ZN/WhVPx+y+Yy3AjMEeUxaS3GbrF+ov5U7LmIVS/o564tir0wAH6ElQ==}
+  '@savvy-web/changesets@0.3.0':
+    resolution: {integrity: sha512-F9t9HcQuBXvK+OOXh30j/5Ep+D6EkbQNXmigTger6iVmo6hIPWgSuNqP1EX15GsLmjFFMj3CQSjIjsw1PFRkQw==}
     engines: {node: '>=24.0.0'}
     hasBin: true
     peerDependencies:
@@ -4636,7 +4636,7 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@savvy-web/changesets@0.1.2(90f96bfd30791aac0637213b9912286a)':
+  '@savvy-web/changesets@0.3.0(90f96bfd30791aac0637213b9912286a)':
     dependencies:
       '@changesets/cli': 2.30.0(@types/node@25.3.3)
       '@changesets/get-github-info': 0.7.0
@@ -4644,11 +4644,13 @@ snapshots:
       '@effect/platform': 0.94.5(effect@3.19.19)
       '@effect/platform-node': 0.104.1(@effect/cluster@0.56.4(@effect/platform@0.94.5(effect@3.19.19))(@effect/rpc@0.73.2(@effect/platform@0.94.5(effect@3.19.19))(effect@3.19.19))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.94.5(effect@3.19.19))(effect@3.19.19))(@effect/platform@0.94.5(effect@3.19.19))(effect@3.19.19))(@effect/workflow@0.16.0(@effect/experimental@0.58.0(@effect/platform@0.94.5(effect@3.19.19))(effect@3.19.19))(@effect/platform@0.94.5(effect@3.19.19))(@effect/rpc@0.73.2(@effect/platform@0.94.5(effect@3.19.19))(effect@3.19.19))(effect@3.19.19))(effect@3.19.19))(@effect/platform@0.94.5(effect@3.19.19))(@effect/rpc@0.73.2(@effect/platform@0.94.5(effect@3.19.19))(effect@3.19.19))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.94.5(effect@3.19.19))(effect@3.19.19))(@effect/platform@0.94.5(effect@3.19.19))(effect@3.19.19))(effect@3.19.19)
       effect: 3.19.19
+      jsonc-parser: 3.3.1
       mdast-util-heading-range: 4.0.0
       mdast-util-to-string: 4.0.0
       remark-gfm: 4.0.1
       remark-parse: 11.0.0
       remark-stringify: 11.0.0
+      tinyglobby: 0.2.15
       unified: 11.0.5
       unified-lint-rule: 3.0.1
       unist-util-visit: 5.1.0
