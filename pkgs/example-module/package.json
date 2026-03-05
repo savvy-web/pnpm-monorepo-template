@@ -25,8 +25,8 @@
 		"types:check": "tsgo --noEmit"
 	},
 	"devDependencies": {
-		"@savvy-web/rslib-builder": "^0.15.0",
-		"vitest": "catalog:silk"
+		"@savvy-web/rslib-builder": "^0.16.0",
+		"vitest": "^4.0.18"
 	},
 	"engines": {
 		"node": ">=20.0.0"
