@@ -38,6 +38,7 @@ importers:
       vitest:
         specifier: ^4.0.18
         version: 4.1.0(@types/node@25.5.0)(vite@8.0.1(@types/node@25.5.0)(jiti@2.6.1)(yaml@2.8.3))
+    publishDirectory: dist/dev
 
   pkgs/example-module-2:
     devDependencies:
@@ -47,6 +48,7 @@ importers:
       vitest:
         specifier: ^4.0.18
         version: 4.1.0(@types/node@25.5.0)(vite@8.0.1(@types/node@25.5.0)(jiti@2.6.1)(yaml@2.8.3))
+    publishDirectory: dist/dev
 
 packages:
 
