@@ -26,7 +26,9 @@
 	},
 	"devDependencies": {
 		"@savvy-web/rslib-builder": "^0.20.1",
-		"vitest": "^4.0.18"
+		"@types/node": "catalog:silk",
+		"@typescript/native-preview": "catalog:silk",
+		"typescript": "catalog:silk"
 	},
 	"engines": {
 		"node": ">=20.0.0"
